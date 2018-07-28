@@ -39,7 +39,8 @@ credencial: credencial
 // leer los documentos
 var tableAdm = document.getElementById('tableAdm');
 // repite por cada documento dentro de visi y va a pintar id
-db.collection("visitantes").get().then((querySnapshot) => {
+// onSnapshot para escuchar en tiempo real
+db.collection("visitantes").onSnapshot((querySnapshot) => {
     // limpiamos la tabla
     tableAdm.innerHTML ='';
     querySnapshot.forEach((doc) => {
