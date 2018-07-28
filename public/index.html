@@ -15,9 +15,18 @@
     <input placeholder="Rut  ejemplo :253610837" id="rut" type="text" class="validate"><br>
     <input placeholder="Nombre" id="nombreCompleto" type="text" class="validate">
     <input placeholder="email" id="email" type="text" class="validate">
-    <input placeholder="seleccion" id="seleccion" type="text" class="validate">
+    <label>Lugar que visita</label>
+  <select class="browser-default" id="seleccion">
+    <option value="" disabled selected>Selecciona un Lugar</option>
+    <option value="1">Laboratoria</option>
+    <option value="2">Robots</option>
+    <option value="3">Mustakis</option>
+    <option value="3">Cafe Altura</option>
+    <option value="3">Whisky</option>
+    <option value="3">Estudio de fotos</option>
+  </select>
     <input placeholder="Patente del auto" id="patente" type="text" class="validate">
-    <input placeholder="Numero de credencial" id="credencial" type="text" class="validate">
+    <input placeholder="Credencial" id="credencial" type="text" class="validate">
     <a class="waves-effect waves-light btn" onclick="guardar()">Guardar</a>
     <table>
         <thead>
@@ -25,7 +34,7 @@
               <th>Rut</th>
               <th>Nombre</th>
               <th>Email</th>
-              <th>Departamento</th>
+              <th>Lugar de Visita</th>
               <th>Patente</th>
               <th>Credencial</th>
           </tr>
