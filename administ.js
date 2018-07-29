@@ -8,8 +8,9 @@ firebase.initializeApp({
 
 // se crea funcion para guardar los datos
 function guardar(){
-    const rut = document.getElementById('rut').value;
+    
     const nombreCompleto = document.getElementById('nombreCompleto').value;
+    const rut = document.getElementById('rut').value;
     const email = document.getElementById('email').value; // buscar funcion y hora
     const patente = document.getElementById('patente').value;
     const lugar = document.getElementById('seleccion').value;// cambiar por una lista de seleccion
@@ -25,8 +26,9 @@ credencial: credencial
 })
 .then(function(docRef) {
     console.log("Document written with ID: ", docRef.id);
-    document.getElementById('rut').value = '';
+   
     document.getElementById('nombreCompleto').value  = '';
+    document.getElementById('rut').value = '';
     document.getElementById('email').value  = '';
     document.getElementById('patente').value  = '';
     document.getElementById('seleccion').value  = '';
