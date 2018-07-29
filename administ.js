@@ -47,8 +47,8 @@ db.collection("visitantes").onSnapshot((querySnapshot) => {
         console.log(`${doc.id} => ${doc.data()}`);
         tableAdm.innerHTML +=` 
         <tr>
-        <td>${doc.data().rut}</td>
         <td>${doc.data().nombreCompleto}</td>
+        <td>${doc.data().rut}</td>
         <td>${doc.data().email}</td>
         <td>${doc.data().patente}</td>
         <td>${doc.data().lugar}</td>
