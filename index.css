@@ -4,6 +4,11 @@
 .btn-small{
     width: 100%;
     margin: 1em;    
+    background-color: black;
+       
+}
+.btn-small:hover{
+    background-color:yellow;
 }
 .contRow{
     width: 40%;
@@ -12,3 +17,5 @@
     width: 100%;
     height: auto;   
 }
+
+
