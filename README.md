@@ -18,7 +18,7 @@ El recepcionista necesita notificar mediante un correo al encargado de la empres
 El recepcionista desea marcar un registro de un visitante ya ingresado porque ya abandonó el edificio.
 El administrador desea iniciar sesión para acceder a la data guardada.
 El administrador desea revisar la data guardada para filtrar información de interes sobre quienes visitan el If.
-El administrador desea filtrar la data guardada para reutilizar la información de interés.
+
 
 
 Carpeta que contiene: Benckmark, guia de entrevistas, audios, diagrama de afinidad, declaración de consentimiento (aun no hago carpeta)
