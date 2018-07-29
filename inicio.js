@@ -8,8 +8,9 @@ firebase.initializeApp({
 
 // se crea funcion para guardar los datos
 function guardar(){
-    const rut = document.getElementById('rut').value;
+    
     const nombreCompleto = document.getElementById('nombreCompleto').value;
+    const rut = document.getElementById('rut').value;
     const email = document.getElementById('email').value; // buscar funcion y hora
     const patente = document.getElementById('patente').value;
     const lugar = document.getElementById('seleccion').value;// cambiar por una lista de seleccion
@@ -25,8 +26,9 @@ credencial: credencial
 })
 .then(function(docRef) {
     console.log("Document written with ID: ", docRef.id);
-    document.getElementById('rut').value = '';
+   
     document.getElementById('nombreCompleto').value  = '';
+    document.getElementById('rut').value = '';
     document.getElementById('email').value  = '';
     document.getElementById('patente').value  = '';
     document.getElementById('seleccion').value  = '';
@@ -47,8 +49,8 @@ db.collection("visitantes").onSnapshot((querySnapshot) => {
         console.log(`${doc.id} => ${doc.data()}`);
         tableAdm.innerHTML +=` 
         <tr>
-        <td>${doc.data().rut}</td>
         <td>${doc.data().nombreCompleto}</td>
+        <td>${doc.data().rut}</td>
         <td>${doc.data().email}</td>
         <td>${doc.data().patente}</td>
         <td>${doc.data().lugar}</td>
@@ -64,8 +66,9 @@ db.collection("visitantes").onSnapshot((querySnapshot) => {
 
 function editar(id,rut,nombreCompleto,email,lugar,patente,credencial){
 //con esto le digo que tome el valor que esta en cada variable y la ponga en el elemento con el id seleccionado
-    document.getElementById('rut').value = rut;
+   
     document.getElementById('nombreCompleto').value  = nombreCompleto;
+    document.getElementById('rut').value = rut;
     document.getElementById('email').value  = email;
     document.getElementById('patente').value  = patente;
     document.getElementById('seleccion').value  = lugar;
@@ -96,8 +99,8 @@ function editar(id,rut,nombreCompleto,email,lugar,patente,credencial){
         .then(function() {
             console.log("Document successfully updated!");
             boton.innerHTML = 'Guardar';
-            document.getElementById('rut').value = '';
             document.getElementById('nombreCompleto').value  = '';
+            document.getElementById('rut').value = '';   
             document.getElementById('email').value  = '';
             document.getElementById('patente').value  = '';
             document.getElementById('seleccion').value  = '';
