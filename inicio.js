@@ -15,13 +15,15 @@ function guardar(){
     const patente = document.getElementById('patente').value;
     const lugar = document.getElementById('seleccion').value;// cambiar por una lista de seleccion
     const credencial = document.getElementById('credencial').value;
+    const observaciones = document.getElementById('observaciones').value;
 db.collection("visitantes").add({// agrega un id automatico  a nuestro documento
 nombreCompleto: nombreCompleto,
 rut: rut,
 email:email,
 patente: patente,
 lugar: lugar,
-credencial: credencial
+credencial: credencial,
+observaciones:observaciones
 
 })
 .then(function(docRef) {
@@ -33,6 +35,7 @@ credencial: credencial
     document.getElementById('patente').value  = '';
     document.getElementById('seleccion').value  = '';
     document.getElementById('credencial').value  = '';
+    document.getElementById('observaciones').value = '';
 })
 .catch(function(error) {
     console.error("Error adding document: ", error);
@@ -55,7 +58,8 @@ db.collection("visitantes").onSnapshot((querySnapshot) => {
         <td>${doc.data().patente}</td>
         <td>${doc.data().lugar}</td>
         <td>${doc.data().credencial}</td>
-        <td><button onclick="editar('${doc.id}','${doc.data().rut}','${doc.data().nombreCompleto}','${doc.data().email}','${doc.data().lugar}','${doc.data().patente}','${doc.data().credencial}')">Editar</button></td>
+        <td>${doc.data().observaciones}</td>
+        <td><button onclick="editar('${doc.id}','${doc.data().rut}','${doc.data().nombreCompleto}','${doc.data().email}','${doc.data().lugar}','${doc.data().patente}','${doc.data().credencial}','${doc.data().observaciones}')">Editar</button></td>
       </tr>`
     });
 });
@@ -64,7 +68,7 @@ db.collection("visitantes").onSnapshot((querySnapshot) => {
 
 
 
-function editar(id,rut,nombreCompleto,email,lugar,patente,credencial){
+function editar(id,rut,nombreCompleto,email,lugar,patente,credencial,observaciones){
 //con esto le digo que tome el valor que esta en cada variable y la ponga en el elemento con el id seleccionado
    
     document.getElementById('nombreCompleto').value  = nombreCompleto;
@@ -73,13 +77,14 @@ function editar(id,rut,nombreCompleto,email,lugar,patente,credencial){
     document.getElementById('patente').value  = patente;
     document.getElementById('seleccion').value  = lugar;
     document.getElementById('credencial').value  = credencial;
+    document.getElementById('observaciones').value = observaciones;
 //aca hago que el boton se modifique al editar. cambia de Guardar a Editar al ejecutarse la fx editar    
     var boton = document.getElementById("guardar");
     boton.innerHTML = 'Editar';
 //con esto le digo que al hacer click, ejecute esta funcion
     boton.onclick = function(){
         var washingtonRef = db.collection("visitantes").doc(id);
-        // Set the "capital" field of the city 'DC'
+       
 
         var nombreCompleto = document.getElementById('nombreCompleto').value;
         var rut = document.getElementById('rut').value;
@@ -87,6 +92,7 @@ function editar(id,rut,nombreCompleto,email,lugar,patente,credencial){
         var patente = document.getElementById('patente').value;
         var lugar = document.getElementById('seleccion').value;
         var credencial = document.getElementById('credencial').value;
+        var observaciones = document.getElementById('observaciones').value;
 
         return washingtonRef.update({
             nombreCompleto: nombreCompleto,
@@ -94,7 +100,8 @@ function editar(id,rut,nombreCompleto,email,lugar,patente,credencial){
             email: email,
             patente: patente,
             lugar: lugar,
-            credencial: credencial
+            credencial: credencial,
+            observaciones:observaciones
         })
         .then(function() {
             console.log("Document successfully updated!");
@@ -105,6 +112,7 @@ function editar(id,rut,nombreCompleto,email,lugar,patente,credencial){
             document.getElementById('patente').value  = '';
             document.getElementById('seleccion').value  = '';
             document.getElementById('credencial').value  = '';
+            document.getElementById('observaciones').value = '';
         })
         .catch(function(error) {
             // The document probably doesn't exist.
