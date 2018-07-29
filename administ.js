@@ -11,15 +11,15 @@ function guardar(){
     const rut = document.getElementById('rut').value;
     const nombreCompleto = document.getElementById('nombreCompleto').value;
     const email = document.getElementById('email').value; // buscar funcion y hora
-    const departamento = document.getElementById('seleccion').value;// cambiar por una lista de seleccion
     const patente = document.getElementById('patente').value;
+    const lugar = document.getElementById('seleccion').value;// cambiar por una lista de seleccion
     const credencial = document.getElementById('credencial').value;
 db.collection("visitantes").add({// agrega un id automatico  a nuestro documento
-rut: rut,
 nombreCompleto: nombreCompleto,
+rut: rut,
 email:email,
-departamento: departamento,
 patente: patente,
+lugar: lugar,
 credencial: credencial
 
 })
@@ -28,8 +28,8 @@ credencial: credencial
     document.getElementById('rut').value = '';
     document.getElementById('nombreCompleto').value  = '';
     document.getElementById('email').value  = '';
-    document.getElementById('seleccion').value  = '';
     document.getElementById('patente').value  = '';
+    document.getElementById('seleccion').value  = '';
     document.getElementById('credencial').value  = '';
 })
 .catch(function(error) {
@@ -45,14 +45,13 @@ db.collection("visitantes").onSnapshot((querySnapshot) => {
     tableAdm.innerHTML ='';
     querySnapshot.forEach((doc) => {
         console.log(`${doc.id} => ${doc.data()}`);
-        
         tableAdm.innerHTML +=` 
         <tr>
         <td>${doc.data().rut}</td>
         <td>${doc.data().nombreCompleto}</td>
         <td>${doc.data().email}</td>
-        <td>${doc.data().departamento}</td>
         <td>${doc.data().patente}</td>
+        <td>${doc.data().lugar}</td>
         <td>${doc.data().credencial}</td>
       </tr>`
     });
