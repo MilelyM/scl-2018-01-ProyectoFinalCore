@@ -2,7 +2,7 @@
 
 En esta oportunidad realizaremos una hoja de registro de visita. El objetivo de nuestro proyecto es crear una alternativa al actual sistema de registro de visita que utiliza If Blanco.
 
-Su principal función será brindarle al usuario un producto que le facilite sus tareas al momento de ingresar los datos de las personas que visitan las distintas empresas alojadas dentro del edificio If Blanco. Tambien le permitirá al administrador del Espacio acceder a la data ingresada, para así tener la oportunidad de reutilizarla.
+Su principal función será brindarle al usuario un producto que le facilite sus tareas al momento de ingresar los datos de las personas que visitan las distintas empresas alojadas dentro del edificio If Blanco y notificarlas de dicha visita. Tambien le permitirá al administrador del Espacio acceder a la data ingresada, para así tener la oportunidad de reutilizarla.
 
 Investigación
 
@@ -10,16 +10,24 @@ El proceso de investigación es fundamental en la creación de nuestro producto.
 
 En este proceso decidimos primero que nada observar la recepción del edificio If Blanco ṕara entender como se realiza actualmente el registro de visitas, luego de esta etapa de observación se procedió a entrevistar a las personas que se verián directamente beneficiadas por nuestro producto (recepcionista, Administradora y encargado de empresa alojado dentro de If Blanco). Nos acercamos a los usuarios por medio de una entrevista, les solicitamos permiso mediante una declaración de consentimiento para que nos permitieran grabar. Luego de realizar esta etapa pudimos definir de mejor forma cuales eran los problemas que estaban enfrentando al momento de registrar una visita, ser notificado de la visita y acceder posteriormente a la información ingresada.
 
+##Historias del Usuario
+El usuario quiere registrar a un visitante.
+El usuario necesita editar el registro de un visitante.
+El usuario desea marcar un registro porque visitante ya abandonó el edificio.
+El usuario desea iniciar sesión.
+El usuario desea revisar la data guardada.
+El usuario desea filtrar por ...
 
-Carpeta que contiene: Benckmark, guia de entrevistas, audios, diagrama de afinidad, declaración de consentimiento
 
-Carpeta que contiene: Imagen posibilidades de nombres Red Social
+Carpeta que contiene: Benckmark, guia de entrevistas, audios, diagrama de afinidad, declaración de consentimiento (aun no hago carpeta)
+
 
 Prototipos
 
 La creación de los sketch es basada en la información desprendida de las entrevistas realizadas a los usuarios.
 
 Prototipo de baja fidelidad Sketch Inicial.
+
 Para verificar que el producto está cumpliendo con la funcionalidad requerida realizamos un primer test con ayuda de dos de los recepcionistas del If Blanco. Este test tenia como objetivo saber de que forma les gustaría ingresar y visualizar la información. luego de esta prueba se iteró hasta llegar al primer scketch de baja fidelidad.
 
 Prototipo de baja fidelidad Sketch Wireframe Testeado.
