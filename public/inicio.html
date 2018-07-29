@@ -11,16 +11,43 @@
   <title>Proyc</title>
 </head>
 <body>
-  
   <div class="container">
-    <div class="row">
-      <div class="col s12">
-          <a class="waves-effect waves-light btn-small" href="../public/inicio.html">REGISTRAR VISITANTES</a>
-      </div>
-      <div class="col s12">
-          <a class="waves-effect waves-light btn-small" href="../public/administ.html">ADMINISTRADOR</a>
-      </div>
-    </div>     
+    <input placeholder="Nombre" id="nombreCompleto" type="text" class="validate">
+    <input placeholder="rut" id="rut" type="text" class="validate"><br>
+    <input placeholder="Email" id="email" type="text" class="validate">
+    <input placeholder="Patente del auto" id="patente" type="text" class="validate">
+    <label>Lugar que visita</label>
+  <select class="browser-default" id="seleccion">
+    <option value="" disabled selected>Selecciona un Lugar</option>
+    <option value="Laboratoria">Laboratoria</option>
+    <option value="Robots">Robots</option>
+    <option value="Mustakis">Mustakis</option>
+    <option value="Cafe Altura">Cafe Altura</option>
+    <option value="Whisky">Whisky</option>
+    <option value="Estudio de fotos">Estudio de fotos</option>
+  </select>
+    <input placeholder="Numero Credencial" id="credencial" type="text" class="validate">
+    <input placeholder="Observaciones" maxlength="140" id="observaciones" type="text" class="validates">
+    <a class="waves-effect waves-light btn" onclick="guardar()" id="guardar">Guardar</a>
+    <table>
+        <thead>
+          <tr>
+              <th>Nombre</th>
+              <th>Rut</th>
+              <th>Email</th>
+              <th>Patente</th>
+              <th>Lugar de Visita</th> 
+              <th>Credencial</th>
+              <th>Observaciones</th>
+              <th>Editar</th>
+          </tr>
+        </thead>
+
+        <tbody id="tableAdm">
+
+        </tbody>
+      </table>
+            
   </div>
  
   <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
@@ -41,7 +68,7 @@
   <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>            
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
-  <script src="../entrada.js"></script>
+  <script src="../inicio.js"></script>
   
 </body>
 </html>

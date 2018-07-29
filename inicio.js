@@ -80,7 +80,7 @@ function editar(id,rut,nombreCompleto,email,lugar,patente,credencial,observacion
     document.getElementById('observaciones').value = observaciones;
 //aca hago que el boton se modifique al editar. cambia de Guardar a Editar al ejecutarse la fx editar    
     var boton = document.getElementById("guardar");
-    boton.innerHTML = 'Editar';
+    boton.innerHTML = 'Guardar tus Cambios';
 //con esto le digo que al hacer click, ejecute esta funcion
     boton.onclick = function(){
         var washingtonRef = db.collection("visitantes").doc(id);
@@ -121,4 +121,7 @@ function editar(id,rut,nombreCompleto,email,lugar,patente,credencial,observacion
     }
     
     }
+    function Redirect() {
+        window.location="administ.html";
+     }
 
