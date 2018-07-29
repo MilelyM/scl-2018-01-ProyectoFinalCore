@@ -1,10 +1,21 @@
 .cont{
-    margin-top: 20em;
+    margin-top: 10em;
 }
 .btn-small{
     width: 100%;
-    margin: 1em;
+    margin: 1em;    
+    background-color: black;
+       
+}
+.btn-small:hover{
+    background-color:yellow;
 }
 .contRow{
     width: 40%;
 }
+.logo{
+    width: 100%;
+    height: auto;   
+}
+
+
