@@ -11,12 +11,14 @@ El proceso de investigación es fundamental en la creación de nuestro producto.
 En este proceso decidimos primero que nada observar la recepción del edificio If Blanco ṕara entender como se realiza actualmente el registro de visitas, luego de esta etapa de observación se procedió a entrevistar a las personas que se verián directamente beneficiadas por nuestro producto (recepcionista, Administradora y encargado de empresa alojado dentro de If Blanco). Nos acercamos a los usuarios por medio de una entrevista, les solicitamos permiso mediante una declaración de consentimiento para que nos permitieran grabar. Luego de realizar esta etapa pudimos definir de mejor forma cuales eran los problemas que estaban enfrentando al momento de registrar una visita, ser notificado de la visita y acceder posteriormente a la información ingresada.
 
 ##Historias del Usuario
-El usuario quiere registrar a un visitante.
-El usuario necesita editar el registro de un visitante.
-El usuario desea marcar un registro porque visitante ya abandonó el edificio.
-El usuario desea iniciar sesión.
-El usuario desea revisar la data guardada.
-El usuario desea filtrar por ...
+
+El recepcionista quiere registrar los datos de un visitante para controlar quien está dentro del If Blanco
+El recepcionista necesita editar el registro de un visitante porque quedó mal ingresado.
+El recepcionista necesita notificar mediante un correo al encargado de la empresa que recibe la visita.
+El recepcionista desea marcar un registro de un visitante ya ingresado porque ya abandonó el edificio.
+El administrador desea iniciar sesión para acceder a la data guardada.
+El administrador desea revisar la data guardada para filtrar información de interes sobre quienes visitan el If.
+El administrador desea filtrar la data guardada para reutilizar la información de interés.
 
 
 Carpeta que contiene: Benckmark, guia de entrevistas, audios, diagrama de afinidad, declaración de consentimiento (aun no hago carpeta)
