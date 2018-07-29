@@ -11,15 +11,15 @@ function guardar(){
     const rut = document.getElementById('rut').value;
     const nombreCompleto = document.getElementById('nombreCompleto').value;
     const email = document.getElementById('email').value; // buscar funcion y hora
-    const departamento = document.getElementById('seleccion').value;// cambiar por una lista de seleccion
+    const lugar = document.getElementById('seleccion').value;// cambiar por una lista de seleccion
     const patente = document.getElementById('patente').value;
     const credencial = document.getElementById('credencial').value;
 db.collection("visitantes").add({// agrega un id automatico  a nuestro documento
-rut: rut,
 nombreCompleto: nombreCompleto,
+rut: rut,
 email:email,
-departamento: departamento,
 patente: patente,
+lugar: lugar,
 credencial: credencial
 
 })
@@ -50,9 +50,64 @@ db.collection("visitantes").onSnapshot((querySnapshot) => {
         <td>${doc.data().rut}</td>
         <td>${doc.data().nombreCompleto}</td>
         <td>${doc.data().email}</td>
-        <td>${doc.data().departamento}</td>
+        <td>${doc.data().lugar}</td>
         <td>${doc.data().patente}</td>
         <td>${doc.data().credencial}</td>
+        <td><button onclick="editar('${doc.id}','${doc.data().rut}','${doc.data().nombreCompleto}','${doc.data().email}','${doc.data().lugar}','${doc.data().patente}','${doc.data().credencial}')">Editar</button></td>
       </tr>`
     });
 });
+
+//Para editar al visitante ingresado segun id
+
+
+
+function editar(id,rut,nombreCompleto,email,lugar,patente,credencial){
+//con esto le digo que tome el valor que esta en cada variable y la ponga en el elemento con el id seleccionado
+    document.getElementById('rut').value = rut;
+    document.getElementById('nombreCompleto').value  = nombreCompleto;
+    document.getElementById('email').value  = email;
+    document.getElementById('seleccion').value  = lugar;
+    document.getElementById('patente').value  = patente;
+    document.getElementById('credencial').value  = credencial;
+//aca hago que el boton se modifique al editar. cambia de Guardar a Editar al ejecutarse la fx editar    
+    var boton = document.getElementById("guardar");
+    boton.innerHTML = 'Editar';
+//con esto le digo que al hacer click, ejecute esta funcion
+    boton.onclick = function(){
+        var washingtonRef = db.collection("visitantes").doc(id);
+        // Set the "capital" field of the city 'DC'
+
+        var nombreCompleto = document.getElementById('nombreCompleto').value;
+        var rut = document.getElementById('rut').value;
+        var email = document.getElementById('email').value;
+        var lugar = document.getElementById('seleccion').value;
+        var patente = document.getElementById('patente').value;
+        var credencial = document.getElementById('credencial').value;
+
+        return washingtonRef.update({
+            nombreCompleto: nombreCompleto,
+            rut: rut,
+            email: email,
+            patente: patente,
+            lugar: lugar,
+            credencial: credencial
+        })
+        .then(function() {
+            console.log("Document successfully updated!");
+            boton.innerHTML = 'Guardar';
+            document.getElementById('rut').value = '';
+            document.getElementById('nombreCompleto').value  = '';
+            document.getElementById('email').value  = '';
+            document.getElementById('seleccion').value  = '';
+            document.getElementById('patente').value  = '';
+            document.getElementById('credencial').value  = '';
+        })
+        .catch(function(error) {
+            // The document probably doesn't exist.
+            console.error("Error updating document: ", error);
+        });
+    }
+    
+    }
+
