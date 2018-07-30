@@ -16,6 +16,8 @@ function guardar(){
     const lugar = document.getElementById('seleccion').value;// cambiar por una lista de seleccion
     const credencial = document.getElementById('credencial').value;
     const observaciones = document.getElementById('observaciones').value;
+    const tiempo = new Date().toLocaleString()       
+    console.log(tiempo)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
 db.collection("visitantes").add({// agrega un id automatico  a nuestro documento
 nombreCompleto: nombreCompleto,
 rut: rut,
@@ -23,7 +25,8 @@ email:email,
 patente: patente,
 lugar: lugar,
 credencial: credencial,
-observaciones:observaciones
+observaciones:observaciones,
+tiempo: tiempo
 
 })
 .then(function(docRef) {
@@ -59,6 +62,7 @@ db.collection("visitantes").onSnapshot((querySnapshot) => {
         <td>${doc.data().lugar}</td>
         <td>${doc.data().credencial}</td>
         <td>${doc.data().observaciones}</td>
+        <td>${doc.data().tiempo}</td>
         <td><button onclick="editar('${doc.id}','${doc.data().rut}','${doc.data().nombreCompleto}','${doc.data().email}','${doc.data().lugar}','${doc.data().patente}','${doc.data().credencial}','${doc.data().observaciones}')">Editar</button></td>
       </tr>`
     });
