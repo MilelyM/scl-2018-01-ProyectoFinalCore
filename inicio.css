@@ -2,18 +2,25 @@
     margin: 0%;
     padding: 0%;
     font-family: sans-serif;
-    font-size: 97%;
+    font-size: 100%;
 }
 
 .row{
     margin-top: 5em;
 }
-.regist{
+.container{
     width: 85% !important;
+}
+.forml{
+    width: 60%;
 }
 
 #guardar{
     margin-bottom: 2em;
     margin-top: 1em;
     margin-right: 1em;
+}
+.imgLogo{
+    width: 5%;
+    margin-top:0.3em;
 }

@@ -12,15 +12,17 @@
 </head>
 <body>
     <nav>
-        <div class="nav-wrapper  light-blue darken-4">
-          <a href="#" class="brand-logo right">Logo</a>
+        <div class="nav-wrapper  light-blue darken-4 ">
+          <img src="../img/iso.png" class="brand-logo right  imgLogo  responsive-img">
         </div>
       </nav>
- <div class="container regist">
+<div class="container">
+ <div class="container">
     <div class="row">
 
-      <div class="col s12 l12 card-panel hoverable centered">
-        <input placeholder="Nombre" id="nombreCompleto" type="text" class="validate">
+      <div class="col s12  m12 l12 card-panel hoverable centered">
+        <input placeholder="Nombre"  id="nombreCompleto" type="text" class="validate">
+        
         <input placeholder="rut" id="rut" type="text" maxlength="12" class="validate"><br>
         <input placeholder="Email" id="email" type="text" class="validate">
         <input placeholder="Patente del auto" id="patente" type="text" maxlength="8" class="validate">
@@ -41,21 +43,21 @@
   
     </div>  
  </div>
- <div class="container ">
-    <div class="row">
-       <div class="col s12 l2 forml table">
-           <table class="highlight card-panel hoverable centered">
+ <div class="container forml  ">
+    <div class="row  ">
+       <div class="col s12  m12 l12 card-panel hoverable centered   ">
+           <table class="highlight card-panel hoverable centered ">
            <thead>
-               <tr class=" white-text light-blue darken-4">
+               <tr class=" white-text light-blue darken-4  ">
                <th>Nombre</th>
-               <th>Rut</th>
-               <th>Email</th>
-               <th>Patente</th>
+               <th class="hide-on-med-and-down">Rut</th>
+               <th class="hide-on-med-and-down">Email</th>
+               <th class="hide-on-med-and-down">Patente</th>
                <th>Lugar de Visita</th> 
                <th>Credencial</th>
-               <th>Observaciones</th>
-               <th>Fecha</th>
-               <th>Editar</th>
+               <th class="hide-on-med-and-down">Observaciones</th>
+               <th>Fecha, Hora</th>
+               <th class="hide-on-med-and-down">Editar</th>
                </tr>
            </thead>
            <tbody id="tableAdm"></tbody>
@@ -63,7 +65,7 @@
        </div>
        </div>
    </div>
- 
+  </div>
   <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
   <script>
     // Initialize Firebase
