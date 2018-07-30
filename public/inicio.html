@@ -21,9 +21,9 @@
 
       <div class="col s12 l12 card-panel hoverable">
         <input placeholder="Nombre" id="nombreCompleto" type="text" class="validate">
-        <input placeholder="rut" id="rut" type="text" class="validate"><br>
+        <input placeholder="rut" id="rut" type="text" maxlength="12" class="validate"><br>
         <input placeholder="Email" id="email" type="text" class="validate">
-        <input placeholder="Patente del auto" id="patente" type="text" class="validate">
+        <input placeholder="Patente del auto" id="patente" type="text" maxlength="8" class="validate">
         <label>Lugar que visita</label>
         <select class="browser-default" id="seleccion">
           <option value="" disabled selected>Selecciona un Lugar</option>
@@ -34,9 +34,9 @@
           <option value="Whisky">Whisky</option>
           <option value="Estudio de fotos">Estudio de fotos</option>
         </select>
-        <input placeholder="Numero Credencial" id="credencial" type="text" class="validate">
+        <input placeholder="Numero Credencial" id="credencial" type="text" maxlength="3" class="validate">
         <input placeholder="Observaciones" maxlength="140" id="observaciones" type="text" class="validates">
-        <a class="waves-effect grey lighten-1 btn" onclick="guardar()" id="guardar">Guardar</a>
+        <a class="waves-effect deep-orange darken-4 right btn" onclick="guardar()" id="guardar">Guardar</a>
       </div>
   
     </div>  
