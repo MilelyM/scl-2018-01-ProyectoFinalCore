@@ -1,3 +1,6 @@
+*{ 
+ 
+}
 .cont{
     margin-top: 10em;
 }
@@ -8,7 +11,9 @@
     background-color: black;
        
 }
-.btn-small:hover{
+.btn-small:hover{   
+    font-family: sans-serif;
+    size: 97%;
     background-color:rgb(211, 211, 46);
 }
 .contRow{
