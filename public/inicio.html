@@ -14,10 +14,6 @@
     <nav>
         <div class="nav-wrapper grey lighten-1">
           <a href="#" class="brand-logo right">Logo</a>
-          <ul id="nav" class="left">
-            <li><a href="inicio.html"><b>REGISTRAR VISITA</b></a></li>
-            <li><a href="inicio2.html"><b>CONSULTAR LISTA DE VISITA</b></a></li>
-          </ul>
         </div>
       </nav>
  <div class="container regist">
@@ -45,7 +41,27 @@
   
     </div>  
  </div>
- 
+ <div class="container ">
+    <div class="row">
+       <div class="col s12 l2 forml">
+           <table class="highlight card-panel hoverable centered">
+           <thead>
+               <tr class="grey lighten-1">
+               <th>Nombre</th>
+               <th>Rut</th>
+               <th>Email</th>
+               <th>Patente</th>
+               <th>Lugar de Visita</th> 
+               <th>Credencial</th>
+               <th>Observaciones</th>
+               <th>Editar</th>
+               </tr>
+           </thead>
+           <tbody id="tableAdm"></tbody>
+           </table>
+       </div>
+       </div>
+   </div>
  
   <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
   <script>
