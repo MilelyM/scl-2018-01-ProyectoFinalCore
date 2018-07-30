@@ -44,6 +44,8 @@ Para visualizar el avance del Proyecto
 
 *[Proyecto](https://registrovisitantes-356b2.firebaseapp.com)
 
+Para acceder a la documentación de las entrevistas, benchmark,tabla de afinidad, test de usabilidad, wireframe, mockup.
 
+*[GoogleDrive](https://drive.google.com/open?id=1XoEfQDP5Q3ebmOcElYAe8RZ0J4tMVpUf)
  
 
