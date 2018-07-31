@@ -46,7 +46,7 @@ Prototipo de alta fidelidad responsive
 *[aquí](https://marvelapp.com/3b6edb8)
 
 Prototipo de alta fidelidad Desktop
-*[aqui]()
+*[aqui](https://marvelapp.com/5e2ge41https://marvelapp.com/5e2ge41)
 
 Para la planificación de las diversas tareas utilizamos la aplicacción Trello.
 
@@ -54,7 +54,7 @@ Para la planificación de las diversas tareas utilizamos la aplicacción Trello.
 
 Para visualizar el avance del Proyecto
 
-*[Proyecto](https://milelym.github.io/scl-2018-01-ProyectoFinalCore/public/index.html)
+*[Proyecto](https://milelym.github.io/scl-2018-01-ProyectoFinalCore/public/splash.html)
 
 Para acceder a Carpeta que contiene: Benckmark, guia de entrevistas, audios, videos de test de usabilidad, presentación, diagrama de afinidad, proceso de prototipado, etc...
 
