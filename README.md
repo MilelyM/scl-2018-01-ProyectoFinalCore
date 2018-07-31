@@ -42,7 +42,7 @@ Para la planificación utilizamos la aplicacción Trello.
 
 Para visualizar el avance del Proyecto
 
-*[Proyecto](https://registrovisitantes-356b2.firebaseapp.com)
+*[Proyecto](https://milelym.github.io/scl-2018-01-ProyectoFinalCore/public/index.html)
 
 Para acceder a la documentación de las entrevistas, benchmark,tabla de afinidad, test de usabilidad, wireframe, mockup.
 
