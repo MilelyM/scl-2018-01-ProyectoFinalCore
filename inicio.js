@@ -62,7 +62,7 @@ db.collection("visitantes").onSnapshot((querySnapshot) => {
         <td>${doc.data().lugar}</td>
         <td>${doc.data().credencial}</td>
         <td class = 'hide-on-med-and-down'>${doc.data().observaciones}</td>
-        <td>${doc.data().tiempo}</td>
+        <td class = 'hide-on-med-and-down'>${doc.data().tiempo}</td>
         <td class = 'hide-on-med-and-down'><button onclick="editar('${doc.id}','${doc.data().rut}','${doc.data().nombreCompleto}','${doc.data().email}','${doc.data().lugar}','${doc.data().patente}','${doc.data().credencial}','${doc.data().observaciones}')">Editar</button></td>
       </tr>`
     });
@@ -128,4 +128,29 @@ function editar(id,rut,nombreCompleto,email,lugar,patente,credencial,observacion
     function Redirect() {
         window.location="administ.html";
      }
+// para enviar en msj
+     var myform = $("form#myform");
+myform.submit(function(event) {
+  event.preventDefault();
+
+  var params = myform.serializeArray().reduce(function(obj, item) {
+    obj[item.name] = item.value;
+    return obj;
+  }, {});
+
+  // Change to your service ID, or keep using the default service
+  var service_id = "default_service";
+
+  var template_id = "template_CuftT6hX";
+  myform.find("button").text("Sending...");
+  emailjs.send(service_id, template_id, params)
+    .then(function() {
+      alert("Sent!");
+      myform.find("button").text("Send");
+    }, function(err) {
+      alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
+      myform.find("button").text("Send");
+    });
+  return false;
+});
 

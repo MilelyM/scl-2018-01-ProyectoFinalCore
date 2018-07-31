@@ -24,3 +24,7 @@
     width: 5%;
     margin-top:0.3em;
 }
+::placeholder{
+    font-size: 100% !important;
+    color: black;
+}
