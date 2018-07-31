@@ -43,7 +43,7 @@ Se realizaron y documentaron varios test de usabilidad, con un sketh de baja fid
 todo e proceso fue debidamente documentado y se puede acceder a él en la carpeta de Google Drive que está al final de este documento
 
 Prototipo de alta fidelidad responsive
-*[aquí](https://marvelapp.com/3b6edb8/screen/46285752)
+*[aquí](https://marvelapp.com/3b6edb8)
 
 Prototipo de alta fidelidad Desktop
 *[aqui]()
