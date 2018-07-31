@@ -2,29 +2,38 @@
  
 }
 .cont{
-    margin-top: 10em;
+    margin-top: 7em;
+    font-size: 100%;
+
 }
-.btn-small{
+.btn-large{
     width: 100%;
     margin-top: 1em; 
     margin-bottom: 1em;   
-    background-color: black;
        
 }
-.btn-small:hover{   
+.btn-large:hover{   
     font-family: sans-serif;
     size: 97%;
-    background-color:rgb(211, 211, 46);
+    background-color:#d35533; 
+    
+}
+.btnNJ{
+    background-color:#13a4ed;  }
+.btnAzul{
+ background-color:#13a4ed;   
 }
 .contRow{
-    width: 40%;
+    width: 65%;
 }
 .logo{
     width: 100%;
     height: auto;   
 }
 .responsive-img{
-    margin-bottom: 5em;
+    margin-bottom: 1em;
+   margin-left: 25%;
+
 }
 
 
