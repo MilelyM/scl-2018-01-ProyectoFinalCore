@@ -129,7 +129,7 @@ function editar(id,rut,nombreCompleto,email,lugar,patente,credencial,observacion
         window.location="administ.html";
      }
 // para enviar en msj
-  /*   var myform = $("form#myform");
+ /*var myform = $("form#myform");
 myform.submit(function(event) {
   event.preventDefault();
 
