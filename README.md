@@ -12,19 +12,26 @@ En este proceso decidimos primero que nada observar la recepción del edificio I
 
 ##Historias del Usuario
 
-El recepcionista quiere registrar los datos de un visitante para controlar quien está dentro del If Blanco
-El recepcionista necesita editar el registro de un visitante porque quedó mal ingresado.
+-El recepcionista quiere registrar los datos de un visitante para controlar quien está dentro del If Blanco
+"Se necesita que nuestro producto contenga un formulario que permita guardar la información del visitante"
+
+-El recepcionista necesita editar el registro de un visitante porque quedó mal ingresado.
+"Es necesario que luego de guardar la información esta pueda ser modificada mediante un boton de editar"
+
 El recepcionista necesita notificar mediante un correo al encargado de la empresa que recibe la visita.
+"se debe implementar una función que permita enviar algún tipo de notificación a la persona encargada de la empresa visitada"
+
 El recepcionista desea marcar un registro de un visitante ya ingresado porque ya abandonó el edificio.
-El administrador desea iniciar sesión para acceder a la data guardada.
+"Una vez guardado el visitante debe mostrarse en pantalla hasta que se retire del edificio, se debe implementar una función que permita marcarlo o borrarlo de la lista de visitantes."
+
+El administrador desea acceder a la data guardada.
+"Se debe implementar un ingreso para el administrador, que le permita proteger la información ingresada, implementar un inicio de sesión"
+
 El administrador desea revisar la data guardada para filtrar información de interes sobre quienes visitan el If.
+"una vez que ingresa a ver la tabla con data, hay que proporcionarle la opción de manipular esa data, mediante un filtro." 
 
 
-
-Carpeta que contiene: Benckmark, guia de entrevistas, audios, diagrama de afinidad, declaración de consentimiento (aun no hago carpeta)
-
-
-Prototipos
+##Prototipos
 
 La creación de los sketch es basada en la información desprendida de las entrevistas realizadas a los usuarios.
 
@@ -32,11 +39,10 @@ Prototipo de baja fidelidad Sketch Inicial.
 
 Para verificar que el producto está cumpliendo con la funcionalidad requerida realizamos un primer test con ayuda de dos de los recepcionistas del If Blanco. Este test tenia como objetivo saber de que forma les gustaría ingresar y visualizar la información. luego de esta prueba se iteró hasta llegar al primer scketch de baja fidelidad.
 
-Prototipo de baja fidelidad Sketch Wireframe Testeado.
-Prototipo de baja fidelidad Mockup.
-Planificación
+Se realizaron y documentaron varios test de usabilidad, con un sketh de baja fidelidad, con wireframe y con demo.
+todo e proceso fue debidamente documentado y se puede acceder a él en la carpeta de Google Drive que está al final de este documento
 
-Para la planificación utilizamos la aplicacción Trello.
+Para la planificación de las diversas tareas utilizamos la aplicacción Trello.
 
 *[Trello](https://trello.com/b/nyjaV4Br/proyecto-x)
 
@@ -44,7 +50,7 @@ Para visualizar el avance del Proyecto
 
 *[Proyecto](https://milelym.github.io/scl-2018-01-ProyectoFinalCore/public/index.html)
 
-Para acceder a la documentación de las entrevistas, benchmark,tabla de afinidad, test de usabilidad, wireframe, mockup.
+Para acceder a Carpeta que contiene: Benckmark, guia de entrevistas, audios, videos de test de usabilidad, presentación, diagrama de afinidad, proceso de prototipado, etc...
 
 *[GoogleDrive](https://drive.google.com/open?id=1XoEfQDP5Q3ebmOcElYAe8RZ0J4tMVpUf)
  
