@@ -13,9 +13,10 @@
 .btn-large:hover{   
     font-family: sans-serif;
     size: 97%;
-    background-color:#d35533; 
+    background-color:#d35533 !important; 
     
 }
+
 .btnNJ{
     background-color:#13a4ed;
 }

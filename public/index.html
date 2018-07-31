@@ -12,7 +12,7 @@
   </head>
   <body>  
 
-      <div class="container cont ">
+        <div class="container cont ">
           <div class="row contRow ">
             <div class=" col s12 logo ">
   
@@ -25,13 +25,46 @@
               </div>
   
               <div class="col s12">
-                <a class="waves-effect waves-Default  btn-large  btnAzul " href="../public/administ.html">ADMINISTRADOR</a>
+                <a class="waves-effect waves-Default  btn-large btn modal-trigger  btnAzul " href="#modal1">ADMINISTRADOR</a>
+                 <!-- Modal Structure -->
+                <div id="modal1" class="modal ">
+                  <div class="modal-content">
+                    <div class="container ">
+                      <div class="row  ">
+                          
+                        <div class="row ">
+                            <div id="capa" class="input-field col s12 m12 l12 responsive">
+                              <i id="inputFile1" type="file" class="material-icons prefix ">@</i>
+                              <input id="email2" type="email" class="validate">
+                              <label for="email">Correo electronico</label>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="input-field col s12 m12 l12 ">
+                                <i class="material-icons prefix ">lock_open</i>
+                                <input id="password2" type="password" class="validate ">
+                                <label for="icon_password ">Contraseña</label>
+                            </div>
+                        </div>
+                    
+                        <div class="row "> 
+                          <div class="input-field col s12 m12 l12 "> 
+                          <button class="waves-effect btn-small modal-close btnIniciar  " onclick="redirect()">Iniciar Sesión</button>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
               </div>
-  
-            </div>
-          </div>
-        </div> 
         
+            </div> 
+          </div>
+        </div>
+      </div>
+     
     
       <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
       <script>
@@ -51,7 +84,7 @@
       <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
       <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>            
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
-      <script src=""></script>
+      <script src="../index.js"></script>
       
     </body>
 </html>
