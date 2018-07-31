@@ -42,6 +42,12 @@ Para verificar que el producto está cumpliendo con la funcionalidad requerida r
 Se realizaron y documentaron varios test de usabilidad, con un sketh de baja fidelidad, con wireframe y con demo.
 todo e proceso fue debidamente documentado y se puede acceder a él en la carpeta de Google Drive que está al final de este documento
 
+Prototipo de alta fidelidad responsive
+*[aquí](https://marvelapp.com/3b6edb8/screen/46285752)
+
+Prototipo de alta fidelidad Desktop
+*[aqui]()
+
 Para la planificación de las diversas tareas utilizamos la aplicacción Trello.
 
 *[Trello](https://trello.com/b/nyjaV4Br/proyecto-x)
