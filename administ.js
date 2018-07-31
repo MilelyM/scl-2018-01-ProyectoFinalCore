@@ -15,13 +15,15 @@ function guardar(){
     const patente = document.getElementById('patente').value;
     const lugar = document.getElementById('seleccion').value;// cambiar por una lista de seleccion
     const credencial = document.getElementById('credencial').value;
+    const tiempo = new Date().toLocaleString()
 db.collection("visitantes").add({// agrega un id automatico  a nuestro documento
 nombreCompleto: nombreCompleto,
 rut: rut,
 email:email,
 patente: patente,
 lugar: lugar,
-credencial: credencial
+credencial: credencial,
+tiempo : tiempo
 
 })
 .then(function(docRef) {
@@ -55,6 +57,7 @@ db.collection("visitantes").onSnapshot((querySnapshot) => {
         <td>${doc.data().patente}</td>
         <td>${doc.data().lugar}</td>
         <td>${doc.data().credencial}</td>
+        <td>${doc.data().tiempo}</td>
       </tr>`
     });
 });
