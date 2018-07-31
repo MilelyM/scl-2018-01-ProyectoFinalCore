@@ -40,8 +40,19 @@
         </select>
         <input placeholder="Numero Credencial" id="credencial" type="text" maxlength="3" class="validate">
         <input placeholder="Observaciones" maxlength="140" id="observaciones" type="text" class="validates">
-        <a class="waves-effect deep-orange darken-4 right btn" onclick="guardar()" id="guardar">Guardar</a>
-      <button >Send</button>
+        <a class="waves-effect deep-orange darken-4 right btn btn modal-trigger " href="#modal1" onclick="guardar()" id="guardar">Guardar</a>
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+              <h4>Notificacion</h4>
+              <p>¿Desea enviar unanotificar de esta visita?</p>
+            </div>
+            <div class="modal-footer"> 
+              <button class="bottonSend">Send</button>
+              <a href="#!" class="modal-close waves-effect waves-green btn-flat">x</a>
+             
+            </div>
+          </div>
+        
     </form>
       </div>
    
@@ -102,6 +113,8 @@
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>            
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
   <script src="../inicio.js"></script>
+  <script src="../index.js"></script>
+
   
   
 </body>
