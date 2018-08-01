@@ -17,7 +17,7 @@ function guardar(){
     const credencial = document.getElementById('credencial').value;
     const observaciones = document.getElementById('observaciones').value;
     const tiempo = new Date().toLocaleString()       
-    console.log(tiempo)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
 db.collection("visitantes").add({// agrega un id automatico  a nuestro documento
 nombreCompleto: nombreCompleto,
 rut: rut,
@@ -64,10 +64,19 @@ db.collection("visitantes").onSnapshot((querySnapshot) => {
         <td class = 'hide-on-med-and-down'>${doc.data().observaciones}</td>
         <td class = 'hide-on-med-and-down'>${doc.data().tiempo}</td>
         <td class = 'hide-on-med-and-down'><button onclick="editar('${doc.id}','${doc.data().rut}','${doc.data().nombreCompleto}','${doc.data().email}','${doc.data().lugar}','${doc.data().patente}','${doc.data().credencial}','${doc.data().observaciones}')">Editar</button></td>
-      </tr>`
+        <td class = 'hide-on-med-and-down'><button onclick="borrar('${doc.id}')">Borrar</button></td>
+
+        </tr>`
     });
 });
 
+function borrar(id){
+    db.collection("visitantes").doc(id).delete().then(function() {
+        console.log("Document successfully deleted!");
+    }).catch(function(error) {
+        console.error("Error removing document: ", error);
+    });
+}
 //Para editar al visitante ingresado segun id
 
 
