@@ -57,7 +57,7 @@ db.collection("visitantes").onSnapshot((querySnapshot) => {
         <td class = 'hide-on-med-and-down'>${doc.data().patente}</td>
         <td>${doc.data().lugar}</td>
         <td class = 'hide-on-med-and-down'>${doc.data().credencial}</td>
-        <td>${doc.data().tiempo}</td>
+        <td class = 'hide-on-small-only'>${doc.data().tiempo}</td>
       </tr>`
     });
 });
