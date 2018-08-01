@@ -1,6 +1,10 @@
 *{
     font-family: sans-serif;
 }
+h4{
+    color:#13a4ed; 
+    font-family: sans-serif;
+}
 .tbl{
     margin-top: 2em;
 }
@@ -10,14 +14,14 @@
 }
 .logo{
     float: right;
-    margin-top: 5px;
+    margin-top: 0.5em;
     width: 15%;
     position: relative;
 }
 .navito{
-    height: 90px;
+    height: 9em;
 }
 .navito img{
     height: auto;
-    width: 100px;
+    width: 10em;
 }

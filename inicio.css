@@ -4,6 +4,10 @@
     font-family: sans-serif;
     font-size: 100%;
 }
+h5{
+    color:#13a4ed; 
+    font-family: sans-serif;
+}
 
 .row{
     margin-top: 5em;
@@ -19,6 +23,7 @@
     margin-bottom: 2em;
     margin-top: 1em;
     margin-right: 1em;
+    background-color: #13a4ed !important; 
 }
 .responsive-img{
     width: 5%;
@@ -37,14 +42,14 @@ color:white
 }
 .logo{
     float: right;
-    margin-top: 5px;
+    margin-top: 0.5em;
     width: 15%;
     position: relative;
 }
 .navito{
-    height: 90px;
+    height: 9em;
 }
 .navito img{
     height: auto;
-    width: 100px;
+    width: 10em;
 }
