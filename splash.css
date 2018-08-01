@@ -1,9 +1,8 @@
 .container{
     margin-top: 16%;
     width: 30%;
-}
-
-
+}   
+ 
 .cssload-preloader {
 	font-family: Arial, Tahoma;
 	position: absolute;
@@ -58,6 +57,7 @@
 		-ms-animation: wobble 5.75s ease-in-out infinite;
 		-webkit-animation: wobble 5.75s ease-in-out infinite;
 		-moz-animation: wobble 5.75s ease-in-out infinite;
+		
 	padding-bottom: 2em;
 }
 
