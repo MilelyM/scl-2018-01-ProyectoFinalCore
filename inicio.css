@@ -41,14 +41,14 @@ color:white
 }
 .logo{
     float: right;
-    margin-top: 5px;
+    margin-top: 0.5em;
     width: 15%;
     position: relative;
 }
 .navito{
-    height: 90px;
+    height: 9em;
 }
 .navito img{
     height: auto;
-    width: 100px;
+    width: 10em;
 }
