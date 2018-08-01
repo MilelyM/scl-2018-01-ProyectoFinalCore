@@ -19,8 +19,12 @@ h4{
 #inicio{
     font-family: sans-serif;
     size: 97%;
-    background-color:#d35533 !important; 
+    background-color:#13a4ed  !important; 
 }    
+#inicio:hover{
+    background: #d35533;
+}
+
 #logo{
     float: right;
     margin-top: 0.5em;

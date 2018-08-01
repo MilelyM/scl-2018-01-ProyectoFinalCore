@@ -16,7 +16,13 @@
     background-color:#d35533 !important; 
     
 }
+.btnIniciar{
+    background-color:#13a4ed;
+}
+.btnIniciar:hover{
+    background-color:#d35533;
 
+}
 .btnNJ{
     background-color:#13a4ed;
 }
