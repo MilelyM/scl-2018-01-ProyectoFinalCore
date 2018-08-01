@@ -12,7 +12,12 @@ h4{
     background-color: #1e448e;
     color: white;
 }
-.logo{
+#inicio{
+    font-family: sans-serif;
+    size: 97%;
+    background-color:#d35533 !important; 
+}    
+#logo{
     float: right;
     margin-top: 0.5em;
     width: 15%;
@@ -21,7 +26,7 @@ h4{
 .navito{
     height: 9em;
 }
-.navito img{
+.navito-img{
     height: auto;
     width: 10em;
 }

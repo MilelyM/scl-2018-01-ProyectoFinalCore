@@ -61,3 +61,6 @@ db.collection("visitantes").onSnapshot((querySnapshot) => {
       </tr>`
     });
 });
+function redirectTo() {
+    location="../public/index.html";
+ }
