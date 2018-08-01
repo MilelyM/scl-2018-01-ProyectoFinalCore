@@ -1,6 +1,10 @@
 *{
     font-family: sans-serif;
 }
+h4{
+    color:#13a4ed; 
+    font-family: sans-serif;
+}
 .tbl{
     margin-top: 2em;
 }
@@ -12,5 +16,17 @@
     font-family: sans-serif;
     size: 97%;
     background-color:#d35533 !important; 
-    
+}    
+#logo{
+    float: right;
+    margin-top: 0.5em;
+    width: 15%;
+    position: relative;
+}
+.navito{
+    height: 9em;
+}
+.navito-img{
+    height: auto;
+    width: 10em;
 }

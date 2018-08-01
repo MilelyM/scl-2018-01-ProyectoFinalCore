@@ -20,6 +20,9 @@
 .btnNJ{
     background-color:#13a4ed;
 }
+.btnNJ:hover { 
+    background-color: #d35533;
+}
 .btnAzul{
  background-color:#13a4ed;  
   
