@@ -52,11 +52,11 @@ db.collection("visitantes").onSnapshot((querySnapshot) => {
         tableAdm.innerHTML +=` 
         <tr>
         <td>${doc.data().nombreCompleto}</td>
-        <td>${doc.data().rut}</td>
+        <td class = 'hide-on-med-and-down'>${doc.data().rut}</td>
         <td>${doc.data().email}</td>
-        <td>${doc.data().patente}</td>
+        <td class = 'hide-on-med-and-down'>${doc.data().patente}</td>
         <td>${doc.data().lugar}</td>
-        <td>${doc.data().credencial}</td>
+        <td class = 'hide-on-med-and-down'>${doc.data().credencial}</td>
         <td>${doc.data().tiempo}</td>
       </tr>`
     });

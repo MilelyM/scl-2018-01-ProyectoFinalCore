@@ -64,7 +64,7 @@ db.collection("visitantes").onSnapshot((querySnapshot) => {
         <td class = 'hide-on-med-and-down'>${doc.data().observaciones}</td>
         <td class = 'hide-on-med-and-down'>${doc.data().tiempo}</td>
         <td class = 'hide-on-med-and-down'><button onclick="editar('${doc.id}','${doc.data().rut}','${doc.data().nombreCompleto}','${doc.data().email}','${doc.data().lugar}','${doc.data().patente}','${doc.data().credencial}','${doc.data().observaciones}')">Editar</button></td>
-        <td class = 'hide-on-med-and-down'><button onclick="borrar('${doc.id}')">Borrar</button></td>
+        <td ><button onclick="borrar('${doc.id}')">Borrar</button></td>
 
         </tr>`
     });
