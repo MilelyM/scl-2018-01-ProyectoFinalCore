@@ -35,3 +35,16 @@ background-color: #d35533;;
 padding: 0.4em;
 color:white
 }
+.logo{
+    float: right;
+    margin-top: 5px;
+    width: 15%;
+    position: relative;
+}
+.navito{
+    height: 90px;
+}
+.navito img{
+    height: auto;
+    width: 100px;
+}
